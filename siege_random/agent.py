@@ -15,17 +15,18 @@ def greet_and_start():
 
 
 @assist.action("user-gives-attdef")
-def get_random_operator(attdef):
-    attackers = ['sledge', 'thatcher', 'ash', 'thermite', 'twitch', 'montagne', 'glaz', 'fzue', 'blitz', 'IQ', 'buck', 'blackbeard', 'capitao', 'hibana', 'jackal'];
-    defenders = ['smoke', 'mute', 'castle', 'pulse', 'doc', 'rook', 'kapkan', 'LORD', 'bandit', 'jager', 'frost', 'valkyrie', 'caveira', 'echo', 'mira']
+def ask_for_operator(attdef):
     if attdef == 'attack':
+        attackers = ['sledge', 'thatcher', 'ash', 'thermite', 'twitch', 'montagne', 'glaz', 'fuzee', 'blitz', 'IQ', 'buck', 'blackbeard', 'capitao', 'hibana', 'jackal'];
         operator = random.choice(attackers)
     else:
+        defenders = ['smoke', 'mute', 'castle', 'pulse', 'doc', 'rook', 'kapkan', 'lord chanka', 'bandit', 'jager', 'frost', 'valkyrie', 'caveira', 'echo', 'mira'];
         operator = random.choice(defenders)
-
+    
     speech = operator
+
     return ask(speech)
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=true, host='0.0.0.0', port=5000)

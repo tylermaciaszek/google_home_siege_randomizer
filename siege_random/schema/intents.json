@@ -1,55 +1,149 @@
 [
     {
-        "name": "greeting",
-        "templates": [],
-        "id": null,
-        "priority": 500000,
-        "webhookForSlotFilling": true,
         "fallbackIntent": false,
-        "events": [],
-        "webhookUsed": true,
+        "name": "user-gives-attdef",
+        "webhookForSlotFilling": true,
         "contexts": [],
-        "userSays": [],
-        "responses": [
+        "auto": true,
+        "templates": [],
+        "webhookUsed": true,
+        "id": "81abedc1-c4b4-4beb-be07-3473087ee8bc",
+        "userSays": [
             {
-                "resetContexts": false,
-                "affectedContexts": [],
-                "action": "greet_and_start",
-                "messages": [],
-                "parameters": []
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": ""
+                    },
+                    {
+                        "alias": "attdef",
+                        "text": "attack",
+                        "meta": "@attdef",
+                        "userDefined": true
+                    }
+                ],
+                "count": 0
+            },
+            {
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": "defense "
+                    }
+                ],
+                "count": 0
+            },
+            {
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": "attacker "
+                    }
+                ],
+                "count": 0
+            },
+            {
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": "defender "
+                    }
+                ],
+                "count": 0
             }
         ],
-        "auto": true
-    },
-    {
-        "name": "user-gives-attdef",
-        "templates": [],
-        "id": "366bff8d-1e39-4a77-a64f-1ded2486d3cc",
-        "priority": 500000,
-        "webhookForSlotFilling": true,
-        "fallbackIntent": false,
-        "events": [],
-        "webhookUsed": true,
-        "contexts": [],
-        "userSays": [],
         "responses": [
             {
-                "resetContexts": false,
-                "affectedContexts": [],
-                "action": "get_random_operator",
-                "messages": [],
                 "parameters": [
                     {
-                        "required": true,
-                        "name": "attdef",
                         "dataType": "@attdef",
                         "value": "$attdef",
-                        "isList": false,
-                        "defaultValue": ""
+                        "defaultValue": "",
+                        "required": true,
+                        "name": "attdef",
+                        "isList": false
                     }
-                ]
+                ],
+                "messages": [],
+                "action": "ask_for_operator",
+                "resetContexts": false,
+                "affectedContexts": []
             }
         ],
-        "auto": true
+        "priority": 500000,
+        "events": []
+    },
+    {
+        "fallbackIntent": false,
+        "name": "greeting",
+        "webhookForSlotFilling": true,
+        "contexts": [],
+        "auto": true,
+        "templates": [],
+        "webhookUsed": true,
+        "id": "0b3e3179-548c-4fd8-9222-142d81d8f02e",
+        "userSays": [
+            {
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": "hi",
+                        "userDefined": false
+                    }
+                ],
+                "count": 0
+            },
+            {
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": "hello",
+                        "userDefined": false
+                    }
+                ],
+                "count": 0
+            },
+            {
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": "start",
+                        "userDefined": false
+                    }
+                ],
+                "count": 0
+            },
+            {
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": "begin",
+                        "userDefined": false
+                    }
+                ],
+                "count": 0
+            },
+            {
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": "launch",
+                        "userDefined": false
+                    }
+                ],
+                "count": 0
+            }
+        ],
+        "responses": [
+            {
+                "parameters": [],
+                "messages": [],
+                "action": "greet_and_start",
+                "resetContexts": false,
+                "affectedContexts": []
+            }
+        ],
+        "priority": 500000,
+        "events": []
     }
 ]

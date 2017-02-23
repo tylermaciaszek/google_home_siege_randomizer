@@ -14,15 +14,19 @@
 
 greeting:
   UserSays:
-  - 
-  - 
-  Annotations:
-  - 
-  - 
+    - hi
+    - hello
+    - start
+    - begin
+    - launch
+
 user-gives-attdef:
   UserSays:
-  - 
-  - 
+    - attack
+    - defense
+    - attacker
+    - defender
+
   Annotations:
-  - 
-  - 
+    - attack: attdef
+    - defend: attdef

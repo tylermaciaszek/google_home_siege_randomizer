@@ -1,16 +1,22 @@
 [
     {
-        "name": "attdef",
-        "id": null,
+        "id": "dd1db0ea-4a7c-4bf5-8800-c38af179fa5f",
         "entries": [
             {
-                "value": null,
-                "synonyms": []
+                "value": "attack",
+                "synonyms": [
+                    "attack",
+                    "attacker"
+                ]
             },
             {
-                "value": null,
-                "synonyms": []
+                "value": "defense",
+                "synonyms": [
+                    "defense",
+                    "defender"
+                ]
             }
-        ]
+        ],
+        "name": "attdef"
     }
 ]

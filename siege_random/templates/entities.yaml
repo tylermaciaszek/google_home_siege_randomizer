@@ -16,5 +16,5 @@
 
 
 attdef:
- - attack: ['attack']
- - defense: ['defense']
+ - attack: ['attack', 'attacker']
+ - defense: ['defense', 'defender']
