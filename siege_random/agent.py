@@ -29,4 +29,4 @@ def ask_for_operator(attdef):
 
 
 if __name__ == '__main__':
-    app.run(debug=true, host='0.0.0.0', port=5000)
+    app.run(debug=true, host='0.0.0.0')
