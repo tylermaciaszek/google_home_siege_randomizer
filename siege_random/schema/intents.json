@@ -1,0 +1,55 @@
+[
+    {
+        "name": "greeting",
+        "templates": [],
+        "id": null,
+        "priority": 500000,
+        "webhookForSlotFilling": true,
+        "fallbackIntent": false,
+        "events": [],
+        "webhookUsed": true,
+        "contexts": [],
+        "userSays": [],
+        "responses": [
+            {
+                "resetContexts": false,
+                "affectedContexts": [],
+                "action": "greet_and_start",
+                "messages": [],
+                "parameters": []
+            }
+        ],
+        "auto": true
+    },
+    {
+        "name": "user-gives-attdef",
+        "templates": [],
+        "id": "366bff8d-1e39-4a77-a64f-1ded2486d3cc",
+        "priority": 500000,
+        "webhookForSlotFilling": true,
+        "fallbackIntent": false,
+        "events": [],
+        "webhookUsed": true,
+        "contexts": [],
+        "userSays": [],
+        "responses": [
+            {
+                "resetContexts": false,
+                "affectedContexts": [],
+                "action": "get_random_operator",
+                "messages": [],
+                "parameters": [
+                    {
+                        "required": true,
+                        "name": "attdef",
+                        "dataType": "@attdef",
+                        "value": "$attdef",
+                        "isList": false,
+                        "defaultValue": ""
+                    }
+                ]
+            }
+        ],
+        "auto": true
+    }
+]
