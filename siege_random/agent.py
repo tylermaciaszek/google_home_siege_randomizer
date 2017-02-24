@@ -1,5 +1,6 @@
 import logging
 import random
+import os
 from flask import Flask
 from flask_assistant import Assistant, ask, tell, context_manager
 
@@ -29,4 +30,5 @@ def ask_for_operator(attdef):
 
 
 if __name__ == '__main__':
-    app.run(debug=true)
+    port = int(os.getenv('PORT', 5000))
+    app.run(debug=True, port=port, host='0.0.0.0')
