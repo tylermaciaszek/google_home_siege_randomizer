@@ -27,6 +27,8 @@ user-gives-attdef:
     - defense
     - attacker
     - defender
+    - defense operator
+    - attack operator
 
   Annotations:
     - attack: attdef
