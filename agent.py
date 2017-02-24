@@ -20,7 +20,7 @@ def ask_for_operator(attdef):
     if attdef == 'attack':
         attackers = ['sledge', 'thatcher', 'ash', 'thermite', 'twitch', 'montagne', 'glaz', 'fuzee', 'blitz', 'IQ', 'buck', 'blackbeard', 'capitao', 'hibana', 'jackal'];
         operator = random.choice(attackers)
-    if attdef = 'defense'
+    if attdef =- 'defense'
         defenders = ['smoke', 'mute', 'castle', 'pulse', 'doc', 'rook', 'kapkan', 'lord chanka', 'bandit', 'jager', 'frost', 'valkyrie', 'caveira', 'echo', 'mira'];
         operator = random.choice(defenders)
     
