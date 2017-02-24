@@ -29,4 +29,4 @@ user-gives-attdef:
 
   Annotations:
     - attack: attdef
-    - defend: attdef
+    - defense: attdef
