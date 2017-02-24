@@ -19,6 +19,7 @@ greeting:
     - start
     - begin
     - launch
+    - another one
 
 user-gives-attdef:
   UserSays:
