@@ -1,22 +1,24 @@
 [
     {
+        "name": "attdef",
+        "id": "dd1db0ea-4a7c-4bf5-8800-c38af179fa5f",
         "entries": [
             {
-                "value": "attack",
                 "synonyms": [
                     "attack",
-                    "attacker"
-                ]
+                    "attacker",
+                    "attack operator"
+                ],
+                "value": "attack"
             },
             {
-                "value": "defense",
                 "synonyms": [
                     "defense",
-                    "defender"
-                ]
+                    "defender",
+                    "defense operator"
+                ],
+                "value": "defense"
             }
-        ],
-        "name": "attdef",
-        "id": "dd1db0ea-4a7c-4bf5-8800-c38af179fa5f"
+        ]
     }
 ]

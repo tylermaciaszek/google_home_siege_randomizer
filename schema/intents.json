@@ -1,165 +1,203 @@
 [
     {
-        "events": [],
         "webhookUsed": true,
-        "id": "81abedc1-c4b4-4beb-be07-3473087ee8bc",
+        "fallbackIntent": false,
         "responses": [
             {
+                "action": "ask_for_operator",
+                "resetContexts": false,
+                "affectedContexts": [],
+                "messages": [],
                 "parameters": [
                     {
-                        "value": "$attdef",
+                        "dataType": "@attdef",
                         "isList": false,
                         "defaultValue": "",
-                        "required": true,
+                        "value": "$attdef",
                         "name": "attdef",
-                        "dataType": "@attdef"
+                        "required": true
                     }
-                ],
-                "messages": [],
-                "affectedContexts": [],
-                "action": "ask_for_operator",
-                "resetContexts": false
+                ]
             }
         ],
-        "contexts": [],
-        "templates": [],
-        "priority": 500000,
         "userSays": [
             {
-                "count": 0,
                 "isTemplate": false,
+                "count": 0,
                 "data": [
                     {
                         "text": ""
                     },
                     {
-                        "alias": "attdef",
-                        "text": "attack",
+                        "userDefined": true,
                         "meta": "@attdef",
-                        "userDefined": true
+                        "alias": "attdef",
+                        "text": "attack"
                     }
                 ]
             },
             {
-                "count": 0,
                 "isTemplate": false,
+                "count": 0,
                 "data": [
                     {
                         "text": ""
                     },
                     {
-                        "alias": "attdef",
-                        "text": "defense",
+                        "userDefined": true,
                         "meta": "@attdef",
-                        "userDefined": true
+                        "alias": "attdef",
+                        "text": "defense"
                     }
                 ]
             },
             {
-                "count": 0,
                 "isTemplate": false,
+                "count": 0,
                 "data": [
                     {
-                        "text": "attacker "
+                        "text": ""
+                    },
+                    {
+                        "userDefined": true,
+                        "meta": "@attdef",
+                        "alias": "attdef",
+                        "text": "attacker"
                     }
                 ]
             },
             {
-                "count": 0,
                 "isTemplate": false,
+                "count": 0,
                 "data": [
                     {
-                        "text": "defender "
+                        "text": ""
+                    },
+                    {
+                        "userDefined": true,
+                        "meta": "@attdef",
+                        "alias": "attdef",
+                        "text": "defender"
+                    }
+                ]
+            },
+            {
+                "isTemplate": false,
+                "count": 0,
+                "data": [
+                    {
+                        "text": ""
+                    },
+                    {
+                        "userDefined": true,
+                        "meta": "@attdef",
+                        "alias": "attdef",
+                        "text": "defense"
+                    },
+                    {
+                        "text": "operator "
+                    }
+                ]
+            },
+            {
+                "isTemplate": false,
+                "count": 0,
+                "data": [
+                    {
+                        "text": ""
+                    },
+                    {
+                        "userDefined": true,
+                        "meta": "@attdef",
+                        "alias": "attdef",
+                        "text": "attack"
+                    },
+                    {
+                        "text": "operator "
                     }
                 ]
             }
         ],
-        "auto": true,
         "webhookForSlotFilling": true,
-        "fallbackIntent": false,
-        "name": "user-gives-attdef"
+        "contexts": [],
+        "auto": true,
+        "id": "81abedc1-c4b4-4beb-be07-3473087ee8bc",
+        "events": [],
+        "name": "user-gives-attdef",
+        "priority": 500000,
+        "templates": []
     },
     {
-        "events": [],
         "webhookUsed": true,
-        "id": "0b3e3179-548c-4fd8-9222-142d81d8f02e",
+        "fallbackIntent": false,
         "responses": [
             {
-                "parameters": [],
-                "messages": [],
-                "affectedContexts": [],
                 "action": "greet_and_start",
-                "resetContexts": false
+                "resetContexts": false,
+                "affectedContexts": [],
+                "messages": [],
+                "parameters": []
             }
         ],
-        "contexts": [],
-        "templates": [],
-        "priority": 500000,
         "userSays": [
             {
-                "count": 0,
                 "isTemplate": false,
+                "count": 0,
                 "data": [
                     {
-                        "text": "hi",
-                        "userDefined": false
+                        "userDefined": false,
+                        "text": "hi"
                     }
                 ]
             },
             {
-                "count": 0,
                 "isTemplate": false,
+                "count": 0,
                 "data": [
                     {
-                        "text": "hello",
-                        "userDefined": false
+                        "userDefined": false,
+                        "text": "hello"
                     }
                 ]
             },
             {
-                "count": 0,
                 "isTemplate": false,
+                "count": 0,
                 "data": [
                     {
-                        "text": "start",
-                        "userDefined": false
+                        "userDefined": false,
+                        "text": "start"
                     }
                 ]
             },
             {
-                "count": 0,
                 "isTemplate": false,
+                "count": 0,
                 "data": [
                     {
-                        "text": "begin",
-                        "userDefined": false
+                        "userDefined": false,
+                        "text": "begin"
                     }
                 ]
             },
             {
-                "count": 0,
                 "isTemplate": false,
+                "count": 0,
                 "data": [
                     {
-                        "text": "launch",
-                        "userDefined": false
-                    }
-                ]
-            },
-            {
-                "count": 0,
-                "isTemplate": false,
-                "data": [
-                    {
-                        "text": "another one",
-                        "userDefined": false
+                        "userDefined": false,
+                        "text": "launch"
                     }
                 ]
             }
         ],
-        "auto": true,
         "webhookForSlotFilling": true,
-        "fallbackIntent": false,
-        "name": "greeting"
+        "contexts": [],
+        "auto": true,
+        "id": "0b3e3179-548c-4fd8-9222-142d81d8f02e",
+        "events": [],
+        "name": "greeting",
+        "priority": 500000,
+        "templates": []
     }
 ]

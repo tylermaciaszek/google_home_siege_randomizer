@@ -18,7 +18,7 @@ def greet_and_start():
 @assist.action("user-gives-attdef")
 def ask_for_operator(attdef):
     if attdef == 'attack':
-        attackers = ['sledge', 'thatcher', 'ash', 'thermite', 'twitch', 'montagne', 'glaz', 'fuzee', 'blitz', 'IQ', 'buck', 'blackbeard', 'capitao', 'hibana', 'jackal'];
+        attackers = ['sledge', 'thatcher', 'ash', 'thermite', 'twitch', 'montagne', 'glaz', 'fuze', 'blitz', 'IQ', 'buck', 'blackbeard', 'capitao', 'hibana', 'jackal'];
         operator = random.choice(attackers)
     else:
         defenders = ['smoke', 'mute', 'castle', 'pulse', 'doc', 'rook', 'kapkan', 'lord chanka', 'bandit', 'jager', 'frost', 'valkyrie', 'caveira', 'echo', 'mira'];
