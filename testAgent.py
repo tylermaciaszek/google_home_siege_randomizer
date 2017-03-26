@@ -7,3 +7,8 @@ if __name__ == '__main__':
     for attacker in root.iter('attacker'):
         attackers.append(attacker.text)
     print(attackers)
+    defenders = []
+    for defender in root.iter('defender'):
+        defenders.append(defender.text)
+    print(defenders)
+

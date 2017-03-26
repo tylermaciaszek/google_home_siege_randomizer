@@ -28,7 +28,7 @@ def ask_for_operator(attdef):
     else:
         defenders = []
         for defender in root.iter('defender'):
-            defender.append(defender.text)
+            defenders.append(defender.text)
         random.shuffle(defenders)
         operator = random.choice(defenders)
     
