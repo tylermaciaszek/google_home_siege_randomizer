@@ -3,6 +3,7 @@ import random
 import os
 from flask import Flask
 from flask_assistant import Assistant, ask, tell, context_manager
+import xml.etree.ElementTree as ET
 
 app = Flask(__name__)
 assist = Assistant(app)
@@ -17,12 +18,17 @@ def greet_and_start():
 
 @assist.action("user-gives-attdef")
 def ask_for_operator(attdef):
+    root = ET.parse('data.xml').getroot()
     if attdef == 'attack':
-        attackers = ['sledge', 'thatcher', 'ash', 'thermite', 'twitch', 'montange', 'glaz', 'fuze', 'blitz', 'IQ', 'buck', 'blackbeard', 'capitao', 'hibana', 'jackal'];
+        attackers = []
+        for attacker in root.iter('attacker'):
+            attackers.append(attacker.text)
         random.shuffle(attackers)
         operator = random.choice(attackers)
     else:
-        defenders = ['smoke', 'mute', 'castle', 'pulse', 'doc', 'rook', 'kapkan', 'lord chanka', 'bandit', 'jager', 'frost', 'valkyrie', 'caveira', 'echo', 'mira'];
+        defenders = []
+        for defender in root.iter('defender'):
+            defender.append(defender.text)
         random.shuffle(defenders)
         operator = random.choice(defenders)
     
