@@ -8,6 +8,8 @@ import xml.etree.ElementTree as ET
 app = Flask(__name__)
 assist = Assistant(app)
 logging.getLogger('flask_assistant').setLevel(logging.DEBUG)
+root = ET.parse('data.xml').getroot()
+operator = ''
 
 
 @assist.action('greeting')
@@ -18,19 +20,18 @@ def greet_and_start():
 
 @assist.action("user-gives-attdef")
 def ask_for_operator(attdef):
-    root = ET.parse('data.xml').getroot()
     if attdef == 'attack':
         attackers = []
         for attacker in root.iter('attacker'):
             attackers.append(attacker.text)
         random.shuffle(attackers)
-        operator = random.choice(attackers)
+        global operator = random.choice(attackers)
     else:
         defenders = []
         for defender in root.iter('defender'):
             defenders.append(defender.text)
         random.shuffle(defenders)
-        operator = random.choice(defenders)
+        global operator = random.choice(defenders)
     
     speech = operator
 

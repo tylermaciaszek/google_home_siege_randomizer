@@ -1,36 +1,91 @@
 <data>
-    <attackers>
-        <attacker name="attacker1">Thatcher</attacker>
-        <attacker name="attacker2">IQ</attacker>
-        <attacker name="attacker3">Sledge</attacker>
-        <attacker name="attacker4">Ash</attacker>
-        <attacker name="attacker5">Thermite</attacker>
-        <attacker name="attacker6">Twitch</attacker>
-        <attacker name="attacker7">Buck</attacker>
-        <attacker name="attacker8">Blackbeard</attacker>
-        <attacker name="attacker9">Capitao</attacker>
-        <attacker name="attacker10">Montange</attacker>
-        <attacker name="attacker11">Glaz</attacker>
-        <attacker name="attacker12">Fuze</attacker>
-        <attacker name="attacker13">Blitz</attacker>
-        <attacker name="attacker14">Hibana</attacker>
-        <attacker name="attacker15">Jackal</attacker>
-    </attackers>
-    <defenders>
-        <defender name="defender1">Smoke</defender>
-        <defender name="defender2">Mute</defender>
-        <defender name="defender3">Castle</defender>
-        <defender name="defender4">Pulse</defender>
-        <defender name="defender5">Doc</defender>
-        <defender name="defender6">Rook</defender>
-        <defender name="defender7">Kapkan</defender>
-        <defender name="defender8">Lord Chanka</defender>
-        <defender name="defender9">Bandit</defender>
-        <defender name="defender10">Jager</defender>
-        <defender name="defender11">Frost</defender>
-        <defender name="defender12">Valkyrie</defender>
-        <defender name="defender13">Caveira</defender>
-        <defender name="defender14">Echo</defender>
-        <defender name="defender15">Mira</defender>
-    </defenders>
+    <attacker name="attacker1">Thatcher
+        <ctu>SAS</ctu>
+    </attacker>
+    <attacker name="attacker2">IQ
+        <ctu>GSG 9</ctu>
+    </attacker>
+    <attacker name="attacker3">Sledge
+        <ctu>SAS</ctu>
+    </attacker>
+    <attacker name="attacker4">Ash
+        <ctu>FBI Swat</ctu>
+    </attacker>
+    <attacker name="attacker5">Thermite
+        <ctu>FBI Swat</ctu>
+    </attacker>
+    <attacker name="attacker6">Twitch
+        <ctu>Gign</ctu>
+    </attacker>
+    <attacker name="attacker7">Buck
+        <ctu>JTF2</ctu>
+    </attacker>
+    <attacker name="attacker8">Blackbeard
+        <ctu>Seals</ctu>
+    <attacker name="attacker9">Capitao
+        <ctu>BOPE</ctu>
+    </attacker>
+    <attacker name="attacker10">Montange
+        <ctu>Gign</ctu>
+    </attacker>
+    <attacker name="attacker11">Glaz
+        <ctu>Spetsnaz</ctu>
+    </attacker>
+    <attacker name="attacker12">Fuze
+        <ctu>Spetsnaz</ctu>
+    </attacker>
+    <attacker name="attacker13">Blitz
+        <ctu>GSG 9</ctu>
+    </attacker>
+    <attacker name="attacker14">Hibana
+        <ctu>SAT</ctu>
+    </attacker>
+    <attacker name="attacker15">Jackal
+        <ctu>GEO</ctu>
+    </attacker>
+    <defender name="defender1">Smoke
+        <ctu>SAS</ctu>
+    </defender>
+    <defender name="defender2">Mute
+        <ctu>SAS</ctu>
+    </defender>
+    <defender name="defender3">Castle
+        <ctu>FBI Swat</ctu>
+    </defender>
+    <defender name="defender4">Pulse
+        <ctu>FBI Swat</ctu>
+    </defender>
+    <defender name="defender5">Doc
+        <ctu>Gign</ctu>
+    </defender>
+    <defender name="defender6">Rook
+        <ctu>Gign</ctu>
+    </defender>
+    <defender name="defender7">Kapkan
+        <ctu>Spetsnaz</ctu>
+    </defender>
+    <defender name="defender8">Lord Chanka
+        <ctu>Spetsnaz</ctu>
+    </defender>
+    <defender name="defender9">Bandit
+        <ctu>GSG 9</ctu>
+    </defender>
+    <defender name="defender10">Jager
+        <ctu>GSG 9</ctu>
+    </defender>
+    <defender name="defender11">Frost
+        <ctu>JTF 2</ctu>
+    </defender>
+    <defender name="defender12">Valkyrie
+        <ctu>Seals</ctu>
+    </defender>
+    <defender name="defender13">Caveira
+        <ctu>BOPE</ctu>
+    </defender>
+    <defender name="defender14">Echo
+        <ctu>SAT</ctu>
+    </defender>
+    <defender name="defender15">Mira
+        <ctu>GEO</ctu>
+    </defender>
 </data>

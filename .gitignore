@@ -2,3 +2,4 @@ debug.log
 envname/*
 heroku keys:add
 heroku keys:add.pub
+testAgent.py
